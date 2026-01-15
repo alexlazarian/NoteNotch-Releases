@@ -6,6 +6,28 @@
         <language>en</language>
         <link>https://github.com/alexlazarian/NoteNotch</link>
 
+        <!-- Version 1.0.7 -->
+        <item>
+            <title>Version 1.0.7</title>
+            <description>
+                <![CDATA[
+                    <h2>🐛 Bug Fixes</h2>
+                    <ul>
+                        <li>Maintenance updates</li>
+                    </ul>
+                ]]>
+            </description>
+            <pubDate>Wed, 14 Jan 2026 12:30:00 +0000</pubDate>
+            <enclosure
+                url="https://github.com/alexlazarian/NoteNotch-Releases/releases/download/v1.0.7/NoteNotch-1.0.7.zip"
+                sparkle:version="12"
+                sparkle:shortVersionString="1.0.7"
+                length="4988412"
+                type="application/octet-stream"
+                sparkle:edSignature="RbPrtCSh31ncCvaRNAOFk1u+suh+u2XVtZI7SR+Qfm5zvjnYnGWKWAbstmswA9NYpJPgWQSNcsmqMzzBbkBtBg==" />
+            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
+        </item>
+
         <!-- Version 1.0.6 - Sparkle Update Fix -->
         <item>
             <title>Version 1.0.6</title>
