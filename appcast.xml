@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel>
+        <title>NoteNotch Updates</title>
+        <description>Most recent updates to NoteNotch</description>
+        <language>en</language>
+        <link>https://github.com/alexlazarian/NoteNotch</link>
+        
+        <!-- Version 1.0.2 - Version Indicator -->
+        <item>
+            <title>Version 1.0.2</title>
+            <description>
+                <![CDATA[
+                    <h2>🧾 Settings</h2>
+                    <ul>
+                        <li>Added a version indicator to the Settings popover</li>
+                    </ul>
+                ]]>
+            </description>
+            <pubDate>Thu, 15 Jan 2026 02:45:21 +0000</pubDate>
+            <enclosure 
+                url="https://alexlazarian.github.io/NoteNotch/releases/NoteNotch-1.0.2.zip"
+                sparkle:version="7"
+                sparkle:shortVersionString="1.0.2"
+                length="4878161"
+                type="application/octet-stream"
+                sparkle:edSignature="ekXVdqZhE7mURv3or8Bbkx4Gy0IYG2TvZKFbZ6I9FCC70V0I+LQCYZmI/nIL5tZfSijpNkV9fj2IsPvh7TEiBQ==" />
+            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
+        </item>
+        
+        <!-- Version 1.0.1 - Search Functionality -->
+        <item>
+            <title>Version 1.0.1</title>
+            <description>
+                <![CDATA[
+                    <style>
+                        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+                        h2 { font-size: 18px; font-weight: 600; margin-top: 20px; margin-bottom: 10px; }
+                        ul { list-style: none; padding-left: 0; }
+                        li { margin-bottom: 8px; padding-left: 24px; position: relative; }
+                        li:before { content: "•"; position: absolute; left: 8px; color: #007AFF; font-weight: bold; }
+                        .emoji { font-size: 16px; margin-right: 6px; }
+                    </style>
+                    
+                    <h2>🔍 Search Functionality</h2>
+                    <ul>
+                        <li><span class="emoji">🔎</span><strong>Full Text Search</strong> - Search across all text views (plain, markdown, bionic)</li>
+                        <li><span class="emoji">🎯</span><strong>Match Highlighting</strong> - Yellow highlights for all matches, blue for current match</li>
+                        <li><span class="emoji">⬆️⬇️</span><strong>Navigation</strong> - Navigate between matches with chevron buttons</li>
+                        <li><span class="emoji">⌨️</span><strong>Keyboard Shortcuts</strong> - Cmd+F to search, Cmd+G for next match, Escape to close</li>
+                        <li><span class="emoji">📊</span><strong>Match Counter</strong> - See current match position (e.g., "2/5")</li>
+                        <li><span class="emoji">🔤</span><strong>Case Sensitivity</strong> - Toggle case-sensitive search</li>
+                        <li><span class="emoji">📍</span><strong>Auto-Scroll</strong> - Automatically scrolls to current match</li>
+                    </ul>
+                    
+                    <h2>🔧 Improvements</h2>
+                    <ul>
+                        <li><span class="emoji">⚡</span>Improved search performance</li>
+                        <li><span class="emoji">🎨</span>Enhanced UI for search bar</li>
+                    </ul>
+                ]]>
+            </description>
+            <pubDate>Wed, 26 Nov 2025 00:56:42 +0000</pubDate>
+            <enclosure 
+                url="https://alexlazarian.github.io/NoteNotch/releases/NoteNotch-1.0.1.zip"
+                sparkle:version="6"
+                sparkle:shortVersionString="1.0.1"
+                length="4986119"
+                type="application/octet-stream"
+                sparkle:edSignature="dQ1omspPyPXlFS0yLiPTG4iuH9dPi10HYS261IHXxVaAfB86QLC07SMJLKYgZ6WUYZeeINf+sTp5dSNoK1jcCw==" />
+            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
+        </item>
+        
+        <!-- Version 1.0.0 - Initial Release -->
+        <item>
+            <title>Version 1.0.0</title>
+            <description>
+                <![CDATA[
+                    <style>
+                        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+                        h2 { font-size: 18px; font-weight: 600; margin-top: 20px; margin-bottom: 10px; }
+                        ul { list-style: none; padding-left: 0; }
+                        li { margin-bottom: 8px; padding-left: 24px; position: relative; }
+                        li:before { content: "•"; position: absolute; left: 8px; color: #007AFF; font-weight: bold; }
+                        .emoji { font-size: 16px; margin-right: 6px; }
+                    </style>
+                    
+                    <h2>🎉 Welcome to NoteNotch 1.0.0</h2>
+                    <p>Your floating teleprompter for seamless presentations and video recording.</p>
+                    
+                    <h2>✨ Key Features</h2>
+                    <ul>
+                        <li><span class="emoji">📝</span><strong>Floating Teleprompter Window</strong> - Always-on-top window that stays visible during recordings</li>
+                        <li><span class="emoji">📄</span><strong>Markdown Support</strong> - Full markdown rendering with syntax highlighting</li>
+                        <li><span class="emoji">⚡</span><strong>Bionic Reading Mode</strong> - Enhanced reading with bolded word beginnings</li>
+                        <li><span class="emoji">🎨</span><strong>Customizable Themes</strong> - Light, dark, and custom color themes</li>
+                        <li><span class="emoji">🔧</span><strong>Menu Bar Integration</strong> - Quick access from your menu bar</li>
+                        <li><span class="emoji">👁️</span><strong>Screen Recording Protection</strong> - Hide content during screen recording</li>
+                        <li><span class="emoji">🪟</span><strong>Window Opacity Control</strong> - Adjust transparency from 20% to 100%</li>
+                    </ul>
+                    
+                    <h2>🚀 Getting Started</h2>
+                    <p>Click the menu bar icon to access settings and customize NoteNotch to your needs.</p>
+                ]]>
+            </description>
+            <pubDate>Mon, 10 Nov 2025 12:00:00 +0000</pubDate>
+            <enclosure 
+                url="https://github.com/alexlazarian/NoteNotch/releases/download/v1.0.0/NoteNotch-1.0.0.zip"
+                sparkle:version="5"
+                sparkle:shortVersionString="1.0.0"
+                length="4960641"
+                type="application/octet-stream"
+                sparkle:edSignature="/Z6FKHdC4Rk5w5Z9cypKOL/246FDI477/EN/MeNvNffNzQ9Sl17YPtHc2eals5y+sKSFIQxAPrgNslIRaVbnDA==" />
+            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
+        </item>
+        
+        <!-- 
+        TEMPLATE FOR FUTURE RELEASES - Copy this block and update values:
+        
+        <item>
+            <title>Version X.X.X</title>
+            <description>
+                <![CDATA[
+                    <style>
+                        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+                        h2 { font-size: 18px; font-weight: 600; margin-top: 20px; margin-bottom: 10px; }
+                        ul { list-style: none; padding-left: 0; }
+                        li { margin-bottom: 8px; padding-left: 24px; position: relative; }
+                        li:before { content: "•"; position: absolute; left: 8px; color: #007AFF; font-weight: bold; }
+                        .emoji { font-size: 16px; margin-right: 6px; }
+                    </style>
+                    
+                    <h2>✨ New Features</h2>
+                    <ul>
+                        <li><span class="emoji">🎯</span><strong>Feature Name</strong> - Description of new feature</li>
+                        <li><span class="emoji">🚀</span><strong>Another Feature</strong> - What it does</li>
+                    </ul>
+                    
+                    <h2>🔧 Improvements</h2>
+                    <ul>
+                        <li><span class="emoji">⚡</span>Improved performance for large documents</li>
+                        <li><span class="emoji">🎨</span>Better theme handling</li>
+                    </ul>
+                    
+                    <h2>🐛 Bug Fixes</h2>
+                    <ul>
+                        <li>Fixed issue where window position wasn't saved</li>
+                        <li>Resolved scroll speed inconsistency</li>
+                    </ul>
+                ]]>
+            </description>
+            <pubDate>DATE_HERE</pubDate>
+            <enclosure 
+                url="https://github.com/alexlazarian/NoteNotch/releases/download/vX.X.X/NoteNotch-X.X.X.zip"
+                sparkle:version="BUILD_NUMBER"
+                sparkle:shortVersionString="X.X.X"
+                length="FILE_SIZE_IN_BYTES"
+                type="application/octet-stream"
+                sparkle:edSignature="SIGNATURE_FROM_sign_update_TOOL" />
+            <sparkle:minimumSystemVersion>12.0</sparkle:minimumSystemVersion>
+        </item>
+        -->
+        
+    </channel>
+</rss>
+
