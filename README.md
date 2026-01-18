@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="web/public/logo.png" alt="NoteNotch Logo" width="128" height="128">
+</p>
+
 # NoteNotch
 
 [![Website](https://img.shields.io/badge/Website-notenotch.app-blue)](https://alexlazarian.github.io/notenotch.app/)

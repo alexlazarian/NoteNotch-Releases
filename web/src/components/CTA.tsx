@@ -1,6 +1,6 @@
 import {Button} from '@/components/ui/button'
 
-const logoUrl = `${import.meta.env.BASE_URL}lovable-uploads/a8ea2d9b-ba2a-459f-a582-22cf6ea5c3fb.png`
+const logoUrl = `${import.meta.env.BASE_URL}logo.png`
 
 export const CTA = () => {
 	return (
