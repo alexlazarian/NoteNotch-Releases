@@ -1,38 +1,41 @@
 import {Button} from '@/components/ui/button'
+import {AppleLogo} from '@/assets/logos/apple'
 
 const logoUrl = `${import.meta.env.BASE_URL}logo.png`
 
 export const CTA = () => {
 	return (
-		<section className='py-24 bg-white font-sans'>
+		<section className='py-32 bg-black text-white'>
 			<div className='max-w-4xl mx-auto px-6 text-center'>
-				{/* Logo/Brand */}
-				<div className='inline-flex items-center justify-center size-20 mb-6'>
+				{/* Logo */}
+				<div className='mb-8'>
 					<img
 						src={logoUrl}
 						alt='NoteNotch'
+						className='w-20 h-20 mx-auto'
 					/>
 				</div>
 
 				{/* Header */}
-				<div className='mb-4'>
-					<h2 className='text-heading text-slate-900 mb-6'>
-						Download NoteNotch
-					</h2>
-					<p className='text-body text-slate-600 max-w-xl mx-auto'>
-						Transform your video presence with professional
-						note-taking that maintains eye contact.
-					</p>
-				</div>
+				<h2 className='text-4xl md:text-5xl lg:text-6xl font-bold mb-6'>
+					Ready to try?
+				</h2>
+				<p className='text-xl text-gray-400 max-w-xl mx-auto mb-12'>
+					Download NoteNotch and transform how you present on video calls.
+				</p>
 
 				{/* Download Button */}
-				<div className='mb-2'>
-					<Button size='lg'>Download for macOS</Button>
-				</div>
+				<Button 
+					size='lg'
+					className='bg-white hover:bg-gray-100 text-black px-10 py-6 text-lg rounded-full flex items-center gap-2'
+				>
+					<AppleLogo className='w-5 h-5' />
+					Download for Mac
+				</Button>
 
-				{/* macOS Requirement Note */}
-				<p className='text-sm text-slate-500 mb-12'>
-					NoteNotch is a macOS app and requires macOS 12+
+				{/* Note */}
+				<p className='text-sm text-gray-500 mt-6'>
+					macOS 12+ • Free
 				</p>
 			</div>
 		</section>

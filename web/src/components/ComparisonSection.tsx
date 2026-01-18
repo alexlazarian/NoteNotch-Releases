@@ -1,180 +1,146 @@
 export const ComparisonSection = () => {
 	return (
-		<section className='relative z-10 overflow-hidden py-32 bg-slate-100'>
-			<div className='mx-auto px-6 max-w-7xl'>
-				<div className='mb-12'>
-					<span className='block text-lg font-medium tracking-tight text-slate-600 lg:text-xl'>
-						Why NoteNotch is different
-					</span>
-					<h2 className='mt-3 text-4xl font-semibold tracking-tight text-slate-900 md:text-5xl lg:text-6xl'>
-						Built for simplicity, not complexity.
+		<section className='py-32 bg-gray-50'>
+			<div className='max-w-6xl mx-auto px-6'>
+				{/* Header */}
+				<div className='text-center mb-16'>
+					<h2 className='text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-4'>
+						Why
+						<span className='text-gray-400'> NoteNotch?</span>
 					</h2>
+					<p className='text-xl text-gray-500 max-w-2xl mx-auto'>
+						See the difference for yourself.
+					</p>
 				</div>
 
-				<div className='relative mt-10 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 lg:gap-8'>
-					{/* Comparison 1: Traditional Note Apps */}
-					<div>
-						<div className='flex flex-col justify-between rounded-2xl bg-white p-2 shadow-sm border border-slate-200'>
-							<div className='pointer-events-none rounded-xl bg-gradient-to-b from-slate-50 to-slate-100 p-6'>
-								<div className='flex items-center justify-between mb-4'>
-									<h3 className='text-base font-medium tracking-tight text-slate-900'>
-										Traditional Note Apps
-									</h3>
-									<div className='flex items-center gap-1 rounded-md bg-red-100 px-3 py-1.5 text-xs font-medium text-red-700'>
-										<svg
-											xmlns='http://www.w3.org/2000/svg'
-											width='12'
-											height='12'
-											viewBox='0 0 12 12'
-											fill='none'
-											className='size-3'
-										>
-											<path
-												d='M6 1L4.5 4L1 4.5L3.5 7L3 10.5L6 9L9 10.5L8.5 7L11 4.5L7.5 4L6 1Z'
-												fill='currentColor'
-											/>
-										</svg>
-										<span>Limited</span>
-									</div>
-								</div>
-								<div className='aspect-video bg-slate-200 rounded-lg flex items-center justify-center'>
-									<div className='text-center px-4'>
-										<div className='w-16 h-16 bg-slate-300 rounded-lg mx-auto mb-3 flex items-center justify-center'>
-											<svg
-												className='w-8 h-8 text-slate-600'
-												viewBox='0 0 24 24'
-												fill='currentColor'
-											>
-												<path d='M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z' />
-											</svg>
-										</div>
-										<p className='text-xs text-slate-600'>
-											Apple Notes, Notion, etc.
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div className='mx-auto mt-5 max-w-[600px] text-base text-slate-600 sm:text-lg'>
-							<p>
-								<strong className='mr-1 font-medium text-slate-900'>
-									Not built for video calls.
-								</strong>
-								Traditional apps like Apple Notes require looking away
-								from your camera, breaking eye contact and reducing
-								your professional presence.
+				{/* Comparison Card - Cluely Style */}
+				<div className='relative flex flex-col lg:flex-row w-full overflow-hidden rounded-[2rem] bg-white shadow-xl'>
+					{/* Left Side - Other Solutions (Bad) */}
+					<div className='flex-1 p-8 md:p-12 bg-gradient-to-br from-red-50 to-orange-50 border-b lg:border-b-0 lg:border-r border-gray-200'>
+						<div className='mb-8'>
+							<span className='inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-100 text-red-600 text-sm font-medium mb-4'>
+								<span className='w-2 h-2 bg-red-500 rounded-full'></span>
+								Other Solutions
+							</span>
+							<h3 className='text-2xl md:text-3xl font-bold text-gray-900 mb-2'>
+								Traditional Note Apps
+							</h3>
+							<p className='text-gray-500'>
+								Apple Notes, Notion, Sticky Notes
 							</p>
 						</div>
+
+						{/* Problem Visualization */}
+						<div className='bg-white rounded-2xl p-6 shadow-sm border border-red-100 mb-6'>
+							<div className='flex items-center gap-4 mb-4'>
+								<div className='w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center'>
+									<svg className='w-6 h-6 text-gray-500' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
+										<path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z' />
+									</svg>
+								</div>
+								<div>
+									<p className='font-medium text-gray-900'>You on video call</p>
+									<p className='text-sm text-gray-500'>Looking away from camera</p>
+								</div>
+							</div>
+							<div className='flex items-center gap-2 text-red-600 text-sm'>
+								<svg className='w-4 h-4' fill='currentColor' viewBox='0 0 20 20'>
+									<path fillRule='evenodd' d='M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z' clipRule='evenodd' />
+								</svg>
+								Breaks eye contact
+							</div>
+						</div>
+
+						{/* Issues List */}
+						<ul className='space-y-3'>
+							<li className='flex items-center gap-3 text-gray-600'>
+								<span className='w-5 h-5 rounded-full bg-red-100 flex items-center justify-center text-red-500 text-xs'>✗</span>
+								Visible on screen share
+							</li>
+							<li className='flex items-center gap-3 text-gray-600'>
+								<span className='w-5 h-5 rounded-full bg-red-100 flex items-center justify-center text-red-500 text-xs'>✗</span>
+								Forces you to look away
+							</li>
+							<li className='flex items-center gap-3 text-gray-600'>
+								<span className='w-5 h-5 rounded-full bg-red-100 flex items-center justify-center text-red-500 text-xs'>✗</span>
+								Unprofessional appearance
+							</li>
+						</ul>
 					</div>
 
-					{/* Comparison 2: Loom Notes */}
-					<div>
-						<div className='flex flex-col justify-between rounded-2xl bg-white p-2 shadow-sm border border-slate-200'>
-							<div className='pointer-events-none rounded-xl bg-gradient-to-b from-slate-50 to-slate-100 p-6'>
-								<div className='flex items-center justify-between mb-4'>
-									<h3 className='text-base font-medium tracking-tight text-slate-900'>
-										Loom Notes Feature
-									</h3>
-									<div className='flex items-center gap-1 rounded-md bg-orange-100 px-3 py-1.5 text-xs font-medium text-orange-700'>
-										<svg
-											xmlns='http://www.w3.org/2000/svg'
-											width='12'
-											height='12'
-											viewBox='0 0 12 12'
-											fill='none'
-											className='size-3'
-										>
-											<path
-												d='M6 1L4.5 4L1 4.5L3.5 7L3 10.5L6 9L9 10.5L8.5 7L11 4.5L7.5 4L6 1Z'
-												fill='currentColor'
-											/>
-										</svg>
-										<span>Loom Only</span>
-									</div>
-								</div>
-								<div className='aspect-video bg-slate-200 rounded-lg flex items-center justify-center'>
-									<div className='text-center px-4'>
-										<div className='w-16 h-16 bg-slate-300 rounded-full mx-auto mb-3 flex items-center justify-center'>
-											<svg
-												className='w-8 h-8 text-slate-600'
-												viewBox='0 0 24 24'
-												fill='currentColor'
-											>
-												<path d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z' />
-											</svg>
-										</div>
-										<p className='text-xs text-slate-600'>
-											Only works in Loom
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div className='mx-auto mt-5 max-w-[600px] text-base text-slate-600 sm:text-lg'>
-							<p>
-								<strong className='mr-1 font-medium text-slate-900'>
-									Platform locked.
-								</strong>
-								Loom's notes feature only works within Loom
-								recordings. No standalone app means no notes for Zoom,
-								Teams, or any other platform.
+					{/* Right Side - NoteNotch (Good) */}
+					<div className='flex-1 p-8 md:p-12 bg-gradient-to-br from-green-50 to-emerald-50'>
+						<div className='mb-8'>
+							<span className='inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-100 text-green-600 text-sm font-medium mb-4'>
+								<span className='w-2 h-2 bg-green-500 rounded-full'></span>
+								NoteNotch
+							</span>
+							<h3 className='text-2xl md:text-3xl font-bold text-gray-900 mb-2'>
+								Invisible to Others
+							</h3>
+							<p className='text-gray-500'>
+								Only you can see your notes
 							</p>
 						</div>
+
+						{/* Solution Visualization */}
+						<div className='bg-white rounded-2xl p-6 shadow-sm border border-green-100 mb-6'>
+							<div className='flex items-center gap-4 mb-4'>
+								<div className='w-12 h-12 bg-black rounded-full flex items-center justify-center'>
+									<svg className='w-6 h-6 text-white' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
+										<path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z' />
+									</svg>
+								</div>
+								<div>
+									<p className='font-medium text-gray-900'>You on video call</p>
+									<p className='text-sm text-gray-500'>Looking confident, notes nearby</p>
+								</div>
+							</div>
+							<div className='flex items-center gap-2 text-green-600 text-sm'>
+								<svg className='w-4 h-4' fill='currentColor' viewBox='0 0 20 20'>
+									<path fillRule='evenodd' d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z' clipRule='evenodd' />
+								</svg>
+								Undetectable on screen share
+							</div>
+						</div>
+
+						{/* Benefits List */}
+						<ul className='space-y-3'>
+							<li className='flex items-center gap-3 text-gray-600'>
+								<span className='w-5 h-5 rounded-full bg-green-100 flex items-center justify-center text-green-500 text-xs'>✓</span>
+								Hidden from screen recordings
+							</li>
+							<li className='flex items-center gap-3 text-gray-600'>
+								<span className='w-5 h-5 rounded-full bg-green-100 flex items-center justify-center text-green-500 text-xs'>✓</span>
+								Position notes near your camera
+							</li>
+							<li className='flex items-center gap-3 text-gray-600'>
+								<span className='w-5 h-5 rounded-full bg-green-100 flex items-center justify-center text-green-500 text-xs'>✓</span>
+								Stay professional and prepared
+							</li>
+						</ul>
 					</div>
 
-					{/* Comparison 3: Cluely */}
-					<div>
-						<div className='flex flex-col justify-between rounded-2xl bg-white p-2 shadow-sm border border-slate-200'>
-							<div className='pointer-events-none rounded-xl bg-gradient-to-b from-slate-50 to-slate-100 p-6'>
-								<div className='flex items-center justify-between mb-4'>
-									<h3 className='text-base font-medium tracking-tight text-slate-900'>
-										AI Meeting Assistants
-									</h3>
-									<div className='flex items-center gap-1 rounded-md bg-purple-100 px-3 py-1.5 text-xs font-medium text-purple-700'>
-										<svg
-											xmlns='http://www.w3.org/2000/svg'
-											width='12'
-											height='12'
-											viewBox='0 0 12 12'
-											fill='none'
-											className='size-3'
-										>
-											<path
-												d='M6 1L4.5 4L1 4.5L3.5 7L3 10.5L6 9L9 10.5L8.5 7L11 4.5L7.5 4L6 1Z'
-												fill='currentColor'
-											/>
-										</svg>
-										<span>AI Powered</span>
-									</div>
-								</div>
-								<div className='aspect-video bg-slate-200 rounded-lg flex items-center justify-center'>
-									<div className='text-center px-4'>
-										<div className='w-16 h-16 bg-slate-300 rounded-full mx-auto mb-3 flex items-center justify-center'>
-											<svg
-												className='w-8 h-8 text-slate-600'
-												viewBox='0 0 24 24'
-												fill='currentColor'
-											>
-												<path d='M12 2L7.5 6.5L2 12l5.5 5.5L12 22l4.5-4.5L22 12l-5.5-5.5L12 2zm0 3l3.5 3.5L19 12l-3.5 3.5L12 19l-3.5-3.5L5 12l3.5-3.5L12 5z' />
-											</svg>
-										</div>
-										<p className='text-xs text-slate-600'>
-											Cluely, Otter.ai, etc.
-										</p>
-									</div>
-								</div>
-							</div>
+					{/* VS Badge */}
+					<div className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 hidden lg:flex'>
+						<div className='w-14 h-14 rounded-full bg-black text-white flex items-center justify-center font-bold text-sm shadow-lg'>
+							VS
 						</div>
-						<div className='mx-auto mt-5 max-w-[600px] text-base text-slate-600 sm:text-lg'>
-							<p>
-								<strong className='mr-1 font-medium text-slate-900'>
-									Over-engineered for simple needs.
-								</strong>
-								AI assistants like Cluely are complex, expensive, and
-								designed for real-time AI responses. NoteNotch is
-								simple, free, and focused on what matters: your notes.
-							</p>
-						</div>
+					</div>
+				</div>
+
+				{/* Platform Compatibility */}
+				<div className='mt-16 text-center'>
+					<p className='text-sm uppercase tracking-wider text-gray-400 mb-6'>
+						Works with every meeting platform
+					</p>
+					<div className='flex flex-wrap justify-center gap-6 md:gap-10 text-lg font-medium text-gray-500'>
+						<span className='hover:text-black transition-colors cursor-default'>Zoom</span>
+						<span className='hover:text-black transition-colors cursor-default'>Google Meet</span>
+						<span className='hover:text-black transition-colors cursor-default'>Teams</span>
+						<span className='hover:text-black transition-colors cursor-default'>Slack</span>
+						<span className='hover:text-black transition-colors cursor-default'>Loom</span>
+						<span className='hover:text-black transition-colors cursor-default'>Webex</span>
 					</div>
 				</div>
 			</div>
