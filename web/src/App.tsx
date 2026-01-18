@@ -10,7 +10,7 @@ import NotFound from './pages/NotFound'
 const queryClient = new QueryClient()
 
 // Use basename for GitHub Pages deployment
-const basename = import.meta.env.PROD ? '/NoteNotch-Releases' : '/'
+const basename = import.meta.env.PROD ? '/notenotch.app' : '/'
 
 const App = () => (
 	<QueryClientProvider client={queryClient}>
