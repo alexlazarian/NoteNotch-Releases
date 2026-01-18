@@ -1,5 +1,7 @@
 import {Button} from '@/components/ui/button'
 
+const logoUrl = `${import.meta.env.BASE_URL}lovable-uploads/a8ea2d9b-ba2a-459f-a582-22cf6ea5c3fb.png`
+
 export const CTA = () => {
 	return (
 		<section className='py-24 bg-white font-sans'>
@@ -7,7 +9,7 @@ export const CTA = () => {
 				{/* Logo/Brand */}
 				<div className='inline-flex items-center justify-center size-20 mb-6'>
 					<img
-						src='/lovable-uploads/a8ea2d9b-ba2a-459f-a582-22cf6ea5c3fb.png'
+						src={logoUrl}
 						alt='NoteNotch'
 					/>
 				</div>
