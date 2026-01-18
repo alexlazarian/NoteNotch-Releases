@@ -6,7 +6,7 @@ import { componentTagger } from "lovable-tagger";
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   // Base path for GitHub Pages - repo name
-  base: mode === "production" ? "/NoteNotch-Releases/" : "/",
+  base: mode === "production" ? "/notenotch.app/" : "/",
   server: {
     host: "::",
     port: 8080,
