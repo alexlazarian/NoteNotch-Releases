@@ -1,3 +1,5 @@
+const logoUrl = `${import.meta.env.BASE_URL}lovable-uploads/a8ea2d9b-ba2a-459f-a582-22cf6ea5c3fb.png`
+
 export const Footer = () => {
 	return (
 		<footer className='200 py-8'>
@@ -7,7 +9,7 @@ export const Footer = () => {
 					<div className='flex items-center'>
 						<div className='w-6 h-6 mr-3'>
 							<img
-								src='/lovable-uploads/a8ea2d9b-ba2a-459f-a582-22cf6ea5c3fb.png'
+								src={logoUrl}
 								alt='NoteNotch'
 								className='w-full h-full object-contain'
 							/>
